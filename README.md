@@ -1,1 +1,1 @@
-# [网址](https://toqxs.wangjingnuo.ga)
+# [网址](https://like.wangjingnuo.cf)
