@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+<html>
+    <head>
+        <title>猜*****</title>
+        <link rel="shortcut icon" href="./favicon.ico">
+        
+    </head>
+    <body>
+        <input type="number" id="inputbox"></input>
+        <input type="button" id="sure" value="确定"></input>
+        
+        <script>
+            inputbox=document.getElementById("inputbox");
+            sure=document.getElementById("sure");
+
+            sure.onclick=function(){
+                if(inputbox.value=="20250102")
+                    window.navigate("20250102.html");
+                if(Math.floor(inputbox.value/10000)!=2025)
+                    alert("请输入 20250*** 的学号，例如 20250101");
+                else
+                    alert("很接近，但不是，请重试吧");
+            }
+        </script>
+
+        <script src="https://cdn.bootcss.com/clipboard.js/1.7.1/clipboard.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <div><span id="btn" data-clipboard-text="20250101">样例复制</span></div>
+        <div id="show" style="display: none;">样例已复制</div>
+        <script>
+            var btn=document.getElementById('btn');
+            var clipboard=new Clipboard(btn);
+            clipboard.on('success', function(e){
+                $('#show').slideDown().delay(1500).slideUp(300);
+                console.log(e);
+            });
+            clipboard.on('error', function(e){
+                $('#show').slideDown().delay(1500).slideUp(300);
+                console.log(e);
+            });
+        </script>
+    </body>
+</html>
