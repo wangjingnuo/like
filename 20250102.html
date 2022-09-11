@@ -22,22 +22,5 @@
                     alert("很接近，但不是，请重试吧");
             }
         </script>
-
-        <script src="https://cdn.bootcss.com/clipboard.js/1.7.1/clipboard.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <div><span id="btn" data-clipboard-text="20250101">样例复制</span></div>
-        <div id="show" style="display: none;">样例已复制</div>
-        <script>
-            var btn=document.getElementById('btn');
-            var clipboard=new Clipboard(btn);
-            clipboard.on('success', function(e){
-                $('#show').slideDown().delay(1500).slideUp(300);
-                console.log(e);
-            });
-            clipboard.on('error', function(e){
-                $('#show').slideDown().delay(1500).slideUp(300);
-                console.log(e);
-            });
-        </script>
     </body>
 </html>
