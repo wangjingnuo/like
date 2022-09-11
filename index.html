@@ -1,91 +1,24 @@
-<!DOCTYPE HTML>
+<meta charset="UTF-8">
 <html>
+    <head>
+        <title>猜*****</title>
+        <link rel="shortcut icon" href="./favicon.ico">
+    </head>
+    <body>
+        <input type="number" id="inputbox"></input>
+        <input type="button" id="sure" value="确定"></input>
+        <script>
+            inputbox=document.getElementById("inputbox");
+            sure=document.getElementById("sure");
 
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<head>
-<title>钱学森学院 ▪ 汪璟诺</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="./favicon.ico">
-<script src="assets/js/jquery.min.js" type="82a452d5d7bc85ed147c13cb-text/javascript"></script>
-<script src="assets/js/skel.min.js" type="82a452d5d7bc85ed147c13cb-text/javascript"></script>
-<script src="assets/js/util.js" type="82a452d5d7bc85ed147c13cb-text/javascript"></script>
-<script src="assets/js/respond.min.js" type="82a452d5d7bc85ed147c13cb-text/javascript"></script>
-<script src="assets/js/responsive.js" type="82a452d5d7bc85ed147c13cb-text/javascript"></script>
-<link rel="stylesheet" href="assets/css/main.css" />
-<script async src="tps://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2750064489293229" crossorigin="anonymous" type="82a452d5d7bc85ed147c13cb-text/javascript"></script>
-</head>
-<body class="">
-<div id="wrapper">
-<article id="home" class="panel special" style="display: flex; transform:scale(0.9,0.9);">
-<div class="content">
-<div class="inner">
-<header>
-<h1>钱学森学院-汪璟诺</h1>
-<div style="width:auto;height: auto;max-width: 60%;max-width: 60%;margin: 0 auto;">
-<img src="images/tx.png" style="width:auto;height: auto;max-width: 60%;max-width: 60%;border-radius:50%;">
-</div>
-<p>A STORY</p>
-</header>
-<nav id="nav">
-<ul class="actions vertical special spinY">
-<li><a href="https://wangjingnuo.ga/" class="button" target="_blank">主站</a></li>
-<li><a href="#story" class="button">故事</a></li>
-<li><a href="#target" class="button">目标</a></li>
-</ul>
-</nav>
-<ul class="icons">
-<li>
-<a href="https://oi.jnw031.ga" class="icon fa-code" target="_blank"></a>
-<span class="label"></span></a>
-</li>
-<li><a href="https://share.eeo.cn/s/b/?sq=ICSuRqKXA3tyhLS734aAcQW0xUFjHR1zXF8A9cns68Q%3D" class="icon fa-comments" target="_blank"><span class="label">ClassIn</span></a></li>
-<li><a href="https://github.com/wangjingnuo" class="icon fa-github"><span class="label" target="_blank">GitHub</span></a></li>
-<li><a href="mailto:lubswang@outlook.com" class="icon fa-envelope"><span class="label" target="_blank">Email</span></a>
-</li>
-</ul>
-</div>
-</div>
-</article>
-<article id="story" class="panel secondary inactive" style="display: none; transform:scale(0.9,0.9);">
-<div class="content">
-<ul class="actions spinX">
-<li>
-<a href="#home" class="button small back">返回</a></li>
-</ul>
-<div class="inner">
-<header>
-<h2> Work</h2>
-</header>
-<header>
-<p>是这样的。</p>
-</header>
-<p>学校开了一个</p>
-</div>
-</div>
-</article>
-<article id="target" class="panel secondary inactive" style="display: none; transform:scale(0.9,0.9);">
-<div class="content">
-<ul class="actions spinX">
-<li>
-<a href="#home" class="button small back">Back</a>
-</li>
-</ul>
-<div class="inner">
-<header>
-<h2>目标</h2>
-<p>我希望能在两年内
-<br> 进入钱学森学院！</p>
-</header>
-</div>
-</article>
-<footer id="footer" class="">
-<p class="copyright">© INF 汪璟诺</p>
-</footer>
-</div>
-<script src="assets/js/buttons-navigate.js" type="82a452d5d7bc85ed147c13cb-text/javascript"></script>
-<script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="82a452d5d7bc85ed147c13cb-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"73e882d079317acf","version":"2022.8.0","r":1,"token":"8434e986e1a14efa8f7d6b2b89d68b93","si":100}' crossorigin="anonymous"></script>
-</body>
-
+            sure.onclick=function(){
+                if(inputbox.value=="20250102")
+                    window.navigate("other_html.html");
+                if(Math.floor(inputbox.value/10000)!=2025)
+                    alert("请输入 20250*** 的学号，例如 20250101");
+                else
+                    alert("很接近，但不是，请重试吧");
+            }
+        </script>
+    </body>
 </html>
